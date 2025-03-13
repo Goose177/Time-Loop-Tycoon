@@ -7,20 +7,23 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Customer Service Bot -->
-<div class="chat-window" id="chat-window">
-  <div class="chat-header">Customer Service Bot</div>
-  <div class="chat-messages" id="chat-messages"></div>
-  <div class="chat-options">
-    <button id="how-to-play">How to Play</button>
-    <button id="version">Version</button>
-    <button id="how-to-save">How to Save</button>
-    <button id="how-to-load">How to Load</button>
-    <button id="invite-friends">Invite Friends</button>
-    <button id="about-company">About Our Company</button>
+  <!-- Chatbot Container -->
+  <div class="bot-container">
+    <img src="chatbot.png" alt="Bot Logo" id="bot-logo">
+    <div class="chat-window" id="chat-window">
+      <div class="chat-header">Customer Service Bot</div>
+      <div class="chat-messages" id="chat-messages"></div>
+      <div class="chat-options">
+        <button id="how-to-play">How to Play</button>
+        <button id="version">Version</button>
+        <button id="how-to-save">How to Save</button>
+        <button id="how-to-load">How to Load</button>
+        <button id="invite-friends">Invite Friends</button>
+        <button id="about-company">About Our Company</button>
+      </div>
+      <input type="text" id="chat-input" placeholder="Type a message...">
+    </div>
   </div>
-  <input type="text" id="chat-input" placeholder="Type a message...">
-</div>
 
   <!-- Game Container -->
   <div class="game-container">
@@ -37,8 +40,13 @@
       <button id="save-button">Save Game</button>
       <button id="load-button">Load Game</button>
     </div>
+    <div class="upgrades">
+      <button id="time-extender">Time Extender ($100)</button>
+      <button id="efficiency-boost">Efficiency Boost ($200)</button>
+      <button id="investor-funding">Investor Funding ($500)</button>
+    </div>
     <div class="message" id="message"></div>
   </div>
   <script src="script.js"></script>
 </body>
-</html>
+  </html>
