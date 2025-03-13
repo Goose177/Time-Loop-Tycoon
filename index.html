@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Loop Tycoon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Customer Service Bot -->
+  <div class="bot-container">
+    <img src="bot-logo.png" alt="Bot Logo" id="bot-logo">
+    <div class="chat-window" id="chat-window">
+      <div class="chat-header">Customer Service Bot</div>
+      <div class="chat-messages" id="chat-messages"></div>
+      <input type="text" id="chat-input" placeholder="Type a message...">
+    </div>
+  </div>
+
+  <!-- Game Container -->
+  <div class="game-container">
+    <h1>Time Loop Tycoon</h1>
+    <div class="stats">
+      <p>Time Left: <span id="time-left">24:00</span></p>
+      <p>Money: $<span id="money">0</span></p>
+      <p>Loop: <span id="loop-count">1</span></p>
+    </div>
+    <div class="actions">
+      <button id="work-button">Work (+$10)</button>
+      <button id="upgrade-button">Upgrade ($<span id="upgrade-cost">50</span>)</button>
+      <button id="reset-button">Reset Loop</button>
+      <button id="save-button">Save Game</button>
+      <button id="load-button">Load Game</button>
+    </div>
+    <div class="message" id="message"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
